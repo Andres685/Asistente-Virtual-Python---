@@ -2,6 +2,7 @@ import speech_recognition as sr
 from random import choice
 from utils import default_text, texto_defecto
 from pruba import speak
+
 def reconocer_idioma():
     speak("Selecciona un Idioma para la Conversacion")
     idioma = input("ES - EN: ")
@@ -46,6 +47,6 @@ def leer_usuario(idioma):
                         speak("Have a nice day Sr")
                         exit()
                 except Exception:
-                    speak("i cant understand your peticion, shall you repeat please?")
+                    speak("i cant understand your petition, shall you repeat please?")
                     query = 'None'
                 return query

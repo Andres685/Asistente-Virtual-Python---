@@ -3,7 +3,8 @@ import subprocess as sp
 from pruba import speak
 rutas = {
     'google': r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-    'visual': r"C:\Users\guzma\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+    'visual': r"C:\Users\guzma\AppData\Local\Programs\Microsoft VS Code\Code.exe",
+    'git': r"C:\Users\guzma\AppData\Local\GitHubDesktop\app-3.5.3\GitHubDesktop.exe"
 }
 def abrir_camara():
     os.startfile("microsoft.windows.camara:")
@@ -22,3 +23,7 @@ def abrir_comandos():
     speak("CMD")
 def abrir_ip():
     sp.run("ipconfig", shell=True)
+def abrir_git():
+    os.startfile(rutas['git'])
+def abrir_tareas():
+    os.system('taskmgr')
