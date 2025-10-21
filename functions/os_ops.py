@@ -25,5 +25,7 @@ def abrir_ip():
     sp.run("ipconfig", shell=True)
 def abrir_git():
     os.startfile(rutas['git'])
+    speak("Git Hub")
 def abrir_tareas():
     os.system('taskmgr')
+    speak("Administrador de Tareas")
